@@ -9,7 +9,22 @@ h1 {
     margin-top: 30px;
 }
 
-img {
+.react-logo {
     width: 40px;
     height: 40px;
 }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    font-size: large;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+

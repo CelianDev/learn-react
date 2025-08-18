@@ -1,5 +1,9 @@
 function ReactLogo() {
-    return <img src="./src/assets/react-icon.png"></img>
+  return (
+    <>
+      <img className="react-logo" src="./src/assets/react-icon.png"></img>
+    </>
+  );
 }
 
-export default ReactLogo
+export default ReactLogo;

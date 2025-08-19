@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, type SetStateAction } from "react";
 
-function IngredientForm({addIngredients}) {
+function IngredientForm({addIngredients,}: {addIngredients: (ingredient: string) => void;}) {
   const [ingredient, setIngredient] = useState("");
 
-  function handleSubmit(e) {
+  function handleSubmit(e: { preventDefault: () => void; }) {
     e.preventDefault();
     if (ingredient.trim()) {
       addIngredients(ingredient);
@@ -11,8 +11,8 @@ function IngredientForm({addIngredients}) {
     }
   }
 
-  function handleChange(e) {
-    setIngredient(e.target.value)
+  function handleChange(e: { target: { value: SetStateAction<string>; }; }) {
+    setIngredient(e.target.value);
   }
 
   return (

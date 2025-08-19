@@ -1,7 +1,7 @@
 import Ingredient from "./Ingredient";
 
-function IngredientsSection({ingredients}: string[]) {
-  const ingredientList = ingredients.map((ingredient, index) => (
+function IngredientsSection({ingredients}: { ingredients: string[] }) {
+  const ingredientList = ingredients.map((ingredient: string, index: number) => (
     <Ingredient key={index} ingredient={ingredient} />
   ));
 

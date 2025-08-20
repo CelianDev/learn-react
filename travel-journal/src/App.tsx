@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/Header.js";
 import TravelCard from "./components/TravelCard.js";
 import travel from "./data/travel.js";
 
